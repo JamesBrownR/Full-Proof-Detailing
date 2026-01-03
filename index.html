@@ -104,17 +104,17 @@
                 <p class="text-gray-400">Scroll to watch our latest details on TikTok</p>
             </div>
             
-            <div class="flex overflow-x-auto gap-6 pb-8 hide-scrollbar snap-x snap-mandatory" id="video-container">
-                <div class="tiktok-frame flex-shrink-0 snap-center bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700">
-                    <img src="https://images.unsplash.com/photo-1600661631040-dc596dd20e9d?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition">
-                    <a href="https://www.tiktok.com/@fullproof_detailing" target="_blank" class="absolute inset-0 flex flex-col items-center justify-center">
-                        <i class="fa-brands fa-tiktok text-4xl text-white mb-2 filter drop-shadow-lg"></i>
-                        <span class="font-bold text-white uppercase tracking-wider">Watch on TikTok</span>
-                    </a>
-                </div>
+           <div class="flex overflow-x-auto gap-6 pb-8 hide-scrollbar snap-x snap-mandatory" id="video-container">
+    <div class="tiktok-frame flex-shrink-0 snap-center bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700">
+        <video src="FPTT1.mp4" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition" autoplay loop muted playsinline></video>
+        <a href="https://www.tiktok.com/@fullproof_detailing" target="_blank" class="absolute inset-0 flex flex-col items-center justify-center">
+            <i class="fa-brands fa-tiktok text-4xl text-white mb-2 filter drop-shadow-lg"></i>
+            <span class="font-bold text-white uppercase tracking-wider">Watch on TikTok</span>
+        </a>
+    </div>
 
                 <div class="tiktok-frame flex-shrink-0 snap-center bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700">
-                    <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition">
+        <video src="FPTT2.mp4" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition" autoplay loop muted playsinline></video>
                     <a href="https://www.tiktok.com/discover/full-proof-detailing" target="_blank" class="absolute inset-0 flex flex-col items-center justify-center">
                         <i class="fa-brands fa-tiktok text-4xl text-white mb-2 filter drop-shadow-lg"></i>
                         <span class="font-bold text-white uppercase tracking-wider">Watch on TikTok</span>
@@ -122,7 +122,15 @@
                 </div>
 
                 <div class="tiktok-frame flex-shrink-0 snap-center bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700">
-                    <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition">
+        <video src="FPTT3.mp4" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition" autoplay loop muted playsinline></video>
+                    <a href="https://www.tiktok.com/discover/full-proof-detailing" target="_blank" class="absolute inset-0 flex flex-col items-center justify-center">
+                        <i class="fa-brands fa-tiktok text-4xl text-white mb-2 filter drop-shadow-lg"></i>
+                        <span class="font-bold text-white uppercase tracking-wider">Watch on TikTok</span>
+                    </a>
+                </div>
+
+                 <div class="tiktok-frame flex-shrink-0 snap-center bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700">
+        <video src="FPTT4.mp4" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition" autoplay loop muted playsinline></video>
                     <a href="https://www.tiktok.com/discover/full-proof-detailing" target="_blank" class="absolute inset-0 flex flex-col items-center justify-center">
                         <i class="fa-brands fa-tiktok text-4xl text-white mb-2 filter drop-shadow-lg"></i>
                         <span class="font-bold text-white uppercase tracking-wider">Watch on TikTok</span>
@@ -249,14 +257,15 @@
         // 1. DYNAMIC GALLERY ARRAY
         // Replace these URLs with Alex's actual work photos later
         const galleryImages = [
-            "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=500&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1552930294-6b595f4c2974?w=500&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1542362567-b07e54358753?w=500&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1563720223185-11003d516935?w=500&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1503376763036-066120622c74?w=500&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=500&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1580273916550-e323be2ebdd4?w=500&h=500&fit=crop"
+            "Work/FP1.webp"
+              "Work/FP2.webp"
+          "Work/FP3.webp"
+          "Work/FP4.webp"
+          "Work/FP5.webp"
+          "Work/FP6.webp"
+          "Work/FP7.webp"
+          "Work/FP8.webp"
+          "Work/FP9.webp"
         ];
 
         const galleryGrid = document.getElementById('gallery-grid');
@@ -276,23 +285,53 @@
         });
 
         // 2. DYNAMIC REVIEWS ARRAY
-        const reviewsArray = [
-            {
-                name: "Sarah Jenkins",
-                stars: 5,
-                text: "Alex is a magician! My SUV had years of kid-mess and stains. He came to my office and made it look brand new. Highly recommend!"
-            },
-            {
-                name: "Mike T.",
-                stars: 5,
-                text: "Full Proof is the real deal. Professional, punctual, and the attention to detail on my motorcycle was unmatched. 10/10 service."
-            },
-            {
-                name: "David R.",
-                stars: 5,
-                text: "Best mobile detailer in Lake County. Convenience of him coming to the house is huge, and the wax job has my truck shining like glass."
-            }
-        ];
+       const reviewsArray = [
+    {
+        name: "SoFia Westfall",
+        stars: 5,
+        text: "Absolutely loved what was done with my car! With me being pregnant and couldn't do much myself, Full Proof Detailing made quite a difference! It smelt new, looked brand new. Definitely worth every penny!"
+    },
+    {
+        name: "Nicole Carney",
+        stars: 5,
+        text: "He was very professional and did an outstanding job on both cars. He worked on one vehicle that was stolen and smelled awful. It looks and smells brand new. His prices are very fair. I am definitely going to be using him regularly!"
+    },
+    {
+        name: "Valentino Peralta",
+        stars: 5,
+        text: "Best detailer would recommend to anyone"
+    },
+    {
+        name: "James Smith",
+        stars: 5,
+        text: "IMPRESSIVE! Great job inside and out on 2 really bad vehicles."
+    },
+    {
+        name: "Jose Gomez",
+        stars: 5,
+        text: "Full Proof Detailing you the best thanks u nice work"
+    },
+    {
+        name: "Brian Westfall",
+        stars: 5,
+        text: "Wow! Was skeptical at first because my daughter had hers done and looked like it came off a show room floor."
+    },
+    {
+        name: "Jasmine Westfall",
+        stars: 5,
+        text: "I had Alex do my 2018 super crew cab truck inside and out. He did an amazing job and you can tell he puts a lot of detail and time into his work! I will continue to use him once a month to detail the truck. Great guy and very trustworthy!"
+    },
+    {
+        name: "Ali Alkorshemi",
+        stars: 5,
+        text: "Absolutely outstanding car detailing service! From start to finish, he was professional, meticulous, and truly passionate about their work. My car looks brand new—every inch was handled with precision and care. The attention to detail is unmatched!"
+    },
+    {
+        name: "David Ponce",
+        stars: 5,
+        text: "Alex did an excellent job detailing the interior and exterior of my car, and really liked the fast and precise job that was done."
+    }
+];
 
         const reviewsContainer = document.getElementById('reviews-container');
 
