@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Full Proof Detailing</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #111; color: white; }
+        
+        /* Brand Colors */
+        .text-brand { color: #FFD700; }
+        .bg-brand { background-color: #FFD700; }
+        .border-brand { border-color: #FFD700; }
+        
+        .glass-panel {
+            background: rgba(30, 30, 30, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Form Input Styling */
+        input, select, textarea {
+            background-color: #222;
+            border: 1px solid #444;
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            border-radius: 0.5rem;
+            outline: none;
+            transition: all 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #FFD700;
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass-panel transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img src="../Logo.png" alt="Full Proof Detailing Logo" class="h-14 w-14 rounded-full border-2 border-brand">
+                    <a href="../index.html" class="font-bold text-xl tracking-tighter hidden sm:block">FULL PROOF <span class="text-brand">DETAILING</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html" class="hover:text-brand transition px-3 py-2 font-bold">Home</a>
+                        <a href="../services/index.html" class="hover:text-brand transition px-3 py-2 font-bold">Services</a>
+                        <a href="../index.html#gallery" class="hover:text-brand transition px-3 py-2 font-bold">Work</a>
+                        <a href="#" class="text-brand border-b-2 border-brand px-3 py-2 font-bold">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="sms:13522989075" class="bg-brand text-black font-black px-6 py-2 rounded-full hover:bg-white transition transform hover:scale-105">
+                        <i class="fa-solid fa-comment-sms mr-2"></i> TEXT US
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-10 text-center bg-[#111]">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-black mb-4">LET'S GET <span class="text-brand">BOOKED</span></h1>
+            <p class="text-gray-400 text-lg">Have a question or ready to schedule? Fill out the form below or text us for the fastest response.</p>
+        </div>
+    </header>
+
+    <section class="py-12 bg-[#161616]">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <div class="glass-panel p-8 rounded-2xl shadow-2xl order-2 lg:order-1">
+                    <h2 class="text-2xl font-bold mb-6">SEND A MESSAGE</h2>
+                    
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+                        
+                        <div>
+                            <label class="block text-gray-400 text-sm font-bold mb-2">Name</label>
+                            <input type="text" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-400 text-sm font-bold mb-2">Phone Number</label>
+                                <input type="tel" name="phone" required placeholder="(352) 000-0000">
+                            </div>
+                            <div>
+                                <label class="block text-gray-400 text-sm font-bold mb-2">Email Address</label>
+                                <input type="email" name="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-400 text-sm font-bold mb-2">Vehicle Year, Make & Model</label>
+                            <input type="text" name="vehicle" placeholder="e.g. 2022 Ford F-150">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-400 text-sm font-bold mb-2">Service Interested In</label>
+                            <select name="service">
+                                <option value="Refresh Package">Refresh Package ($60+)</option>
+                                <option value="Full Proof Detail">Full Proof Detail ($150+)</option>
+                                <option value="Showroom Reset">Showroom Reset ($250+)</option>
+                                <option value="RV/Fleet">RV or Fleet Washing</option>
+                                <option value="Motorcycle">Motorcycle Detail</option>
+                                <option value="Other">Other / Custom Quote</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-400 text-sm font-bold mb-2">Any specific issues? (Stains, scratches, etc)</label>
+                            <textarea name="message" rows="4" placeholder="Tell us about your detailing needs..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand text-black font-black py-4 rounded hover:bg-white transition duration-300 uppercase tracking-widest text-lg">
+                            Send Request
+                        </button>
+                    </form>
+                </div>
+
+                <div class="order-1 lg:order-2 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-3xl font-black mb-6">CONTACT <span class="text-brand">INFO</span></h2>
+                        <div class="space-y-8">
+                            
+                            <a href="tel:13522989075" class="flex items-center gap-4 group cursor-pointer">
+                                <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center text-brand text-2xl group-hover:bg-brand group-hover:text-black transition">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Call or Text</p>
+                                    <p class="text-xl font-bold group-hover:text-brand transition">+1 (352) 298-9075</p>
+                                </div>
+                            </a>
+
+                            <a href="mailto:Fullproofdetailing07@gmail.com" class="flex items-center gap-4 group cursor-pointer">
+                                <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center text-brand text-2xl group-hover:bg-brand group-hover:text-black transition">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Email Us</p>
+                                    <p class="text-xl font-bold group-hover:text-brand transition">Fullproofdetailing07@gmail.com</p>
+                                </div>
+                            </a>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center text-brand text-2xl">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Service Area</p>
+                                    <p class="text-xl font-bold">Lake County & Central FL</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <p class="font-bold mb-4">FOLLOW OUR WORK</p>
+                        <div class="flex gap-4">
+                            <a href="https://www.tiktok.com/discover/full-proof-detailing" class="w-16 h-16 bg-[#222] border border-gray-700 rounded-xl flex items-center justify-center hover:border-brand hover:text-brand transition">
+                                <i class="fa-brands fa-tiktok text-2xl"></i>
+                            </a>
+                            <a href="https://www.facebook.com/p/Full-proof-Detailing-61569693412226/" class="w-16 h-16 bg-[#222] border border-gray-700 rounded-xl flex items-center justify-center hover:border-brand hover:text-brand transition">
+                                <i class="fa-brands fa-facebook-f text-2xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/fullproof_detailing/" class="w-16 h-16 bg-[#222] border border-gray-700 rounded-xl flex items-center justify-center hover:border-brand hover:text-brand transition">
+                                <i class="fa-brands fa-instagram text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-[#111]">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-black text-center mb-10">FREQUENTLY ASKED <span class="text-brand">QUESTIONS</span></h2>
+            
+            <div class="space-y-4">
+                <details class="group bg-[#161616] p-6 rounded-lg cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-lg list-none">
+                        <span>Do I need to provide water or power?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-brand"></i></span>
+                    </summary>
+                    <p class="text-gray-400 mt-4 group-open:animate-fadeIn">
+                        We are a fully mobile unit. However, having access to a water spigot or power outlet is helpful! If you are at an apartment complex or office without access, please let us know in the notes so we can prepare accordingly.
+                    </p>
+                </details>
+
+                <details class="group bg-[#161616] p-6 rounded-lg cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-lg list-none">
+                        <span>How long does a detail take?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-brand"></i></span>
+                    </summary>
+                    <p class="text-gray-400 mt-4 group-open:animate-fadeIn">
+                        It depends on the package! A standard <strong>Refresh</strong> takes about 1-1.5 hours. A <strong>Full Proof Detail</strong> can take 2-4 hours depending on the condition of the interior.
+                    </p>
+                </details>
+
+                <details class="group bg-[#161616] p-6 rounded-lg cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-lg list-none">
+                        <span>What forms of payment do you accept?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-brand"></i></span>
+                    </summary>
+                    <p class="text-gray-400 mt-4 group-open:animate-fadeIn">
+                        We accept Cash, Card, Zelle, and Apple Pay. Payment is due upon completion of the job and your satisfaction.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 text-center text-sm text-gray-600 border-t border-gray-900">
+        <p>© 2024 Full Proof Detailing. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
