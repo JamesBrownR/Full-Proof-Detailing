@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Proof Detailing | Mobile Auto Detailing Central FL</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #111; color: white; }
+        
+        /* Brand Colors */
+        .text-brand { color: #FFD700; }
+        .bg-brand { background-color: #FFD700; }
+        .border-brand { border-color: #FFD700; }
+        .hover-bg-brand:hover { background-color: #E5C100; }
+        
+        /* Custom Scrollbar for Video Gallery */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Glassmorphism */
+        .glass-panel {
+            background: rgba(30, 30, 30, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Video Aspect Ratio (9:16 for TikToks) */
+        .tiktok-frame {
+            aspect-ratio: 9/16;
+            min-width: 280px;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass-panel transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img src="Logo.png" alt="Full Proof Detailing Logo" class="h-14 w-14 rounded-full border-2 border-brand">
+                    <span class="font-bold text-xl tracking-tighter hidden sm:block">FULL PROOF <span class="text-brand">DETAILING</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-brand transition px-3 py-2 font-bold">Home</a>
+                        <a href="#services" class="hover:text-brand transition px-3 py-2 font-bold">Services</a>
+                        <a href="#gallery" class="hover:text-brand transition px-3 py-2 font-bold">Work</a>
+                        <a href="#reviews" class="hover:text-brand transition px-3 py-2 font-bold">Reviews</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="sms:13522989075" class="bg-brand text-black font-black px-6 py-2 rounded-full hover-bg-brand transition transform hover:scale-105">
+                        <i class="fa-solid fa-comment-sms mr-2"></i> TEXT FOR QUOTE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black">
+            <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover opacity-40" alt="Luxury Car Detailing">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-black/80"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl" data-aos="fade-up">
+            <p class="text-brand font-bold tracking-widest mb-4">EST. IN 2024 • SERVICING CENTRAL FLORIDA</p>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                SHOWROOM SHINE.<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">FULL PROOF</span> RESULTS.
+            </h1>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Auto, RV, and Motorcycle detailing brought directly to your driveway. We don't just wash; we restore.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="sms:13522989075" class="bg-brand text-black font-black text-lg px-8 py-4 rounded hover:bg-white transition duration-300">
+                    GET A QUOTE
+                </a>
+                <a href="#videos" class="border-2 border-white text-white font-bold text-lg px-8 py-4 rounded hover:bg-white hover:text-black transition duration-300">
+                    WATCH US WORK
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="py-20 bg-[#111]">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-black mb-2">SEE THE <span class="text-brand">TRANSFORMATION</span></h2>
+                <p class="text-gray-400">Scroll to watch our latest details on TikTok</p>
+            </div>
+            
+            <div class="flex overflow-x-auto gap-6 pb-8 hide-scrollbar snap-x snap-mandatory" id="video-container">
+                <div class="tiktok-frame flex-shrink-0 snap-center bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700">
+                    <img src="https://images.unsplash.com/photo-1600661631040-dc596dd20e9d?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition">
+                    <a href="https://www.tiktok.com/@fullproof_detailing" target="_blank" class="absolute inset-0 flex flex-col items-center justify-center">
+                        <i class="fa-brands fa-tiktok text-4xl text-white mb-2 filter drop-shadow-lg"></i>
+                        <span class="font-bold text-white uppercase tracking-wider">Watch on TikTok</span>
+                    </a>
+                </div>
+
+                <div class="tiktok-frame flex-shrink-0 snap-center bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700">
+                    <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition">
+                    <a href="https://www.tiktok.com/discover/full-proof-detailing" target="_blank" class="absolute inset-0 flex flex-col items-center justify-center">
+                        <i class="fa-brands fa-tiktok text-4xl text-white mb-2 filter drop-shadow-lg"></i>
+                        <span class="font-bold text-white uppercase tracking-wider">Watch on TikTok</span>
+                    </a>
+                </div>
+
+                <div class="tiktok-frame flex-shrink-0 snap-center bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700">
+                    <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition">
+                    <a href="https://www.tiktok.com/discover/full-proof-detailing" target="_blank" class="absolute inset-0 flex flex-col items-center justify-center">
+                        <i class="fa-brands fa-tiktok text-4xl text-white mb-2 filter drop-shadow-lg"></i>
+                        <span class="font-bold text-white uppercase tracking-wider">Watch on TikTok</span>
+                    </a>
+                </div>
+            </div>
+             <div class="text-center mt-6">
+                <p class="text-sm text-gray-500 animate-bounce"><i class="fa-solid fa-arrow-right"></i> Swipe to see more <i class="fa-solid fa-arrow-left"></i></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-[#161616]">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="glass-panel p-8 rounded-xl hover:border-brand transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-car text-black text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">AUTO DETAILING</h3>
+                    <p class="text-gray-400">Interior deep cleaning, exterior wash, wax, and paint correction. We bring the showroom back to your daily driver.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-xl hover:border-brand transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-truck-monster text-black text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">RV & FLEET</h3>
+                    <p class="text-gray-400">Specialized washing and oxidation removal for large vehicles. Keep your investment protected from the Florida sun.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-xl hover:border-brand transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-motorcycle text-black text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">MOTORCYCLES</h3>
+                    <p class="text-gray-400">Chrome polishing, leather care, and detailed cleaning for bikes. We treat every bike like it's our own.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-[#111]">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-black">RECENT <span class="text-brand">WORK</span></h2>
+                    <p class="text-gray-400 mt-2">Lake County's finest finishes.</p>
+                </div>
+                <a href="https://www.instagram.com/fullproof_detailing/" class="hidden md:block text-brand font-bold border-b border-brand pb-1">View Instagram <i class="fa-solid fa-arrow-right ml-2"></i></a>
+            </div>
+            
+            <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-20 bg-gradient-to-b from-[#161616] to-[#111]">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-black text-center mb-16">WHAT PEOPLE <span class="text-brand">SAY</span></h2>
+            <div id="reviews-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                </div>
+        </div>
+    </section>
+
+    <section class="py-20 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl font-black mb-6">WE COME TO <span class="text-brand">YOU!</span></h2>
+                    <p class="text-xl text-gray-300 mb-8">Servicing Lake County & All of Central Florida.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-brand p-3 rounded text-black"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Call or Text</h4>
+                                <a href="tel:13522989075" class="text-gray-400 hover:text-brand transition text-lg">+1 (352) 298-9075</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="bg-brand p-3 rounded text-black"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Operating Hours</h4>
+                                <ul class="text-gray-400 space-y-1 mt-2 text-sm">
+                                    <li class="flex justify-between w-60"><span>Mon - Wed:</span> <span>8:00 AM – 5:00 PM</span></li>
+                                    <li class="flex justify-between w-60"><span>Thursday:</span> <span>8:00 AM – 6:30 PM</span></li>
+                                    <li class="flex justify-between w-60"><span>Friday:</span> <span>9:00 AM – 6:30 PM</span></li>
+                                    <li class="flex justify-between w-60"><span class="text-brand font-bold">Saturday:</span> <span class="text-white">9:00 AM – 12:00 AM</span></li>
+                                    <li class="flex justify-between w-60"><span class="text-brand font-bold">Sunday:</span> <span class="text-white">12:00 PM – 6:30 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 mt-8">
+                            <a href="https://www.facebook.com/p/Full-proof-Detailing-61569693412226/" class="w-12 h-12 bg-[#222] rounded flex items-center justify-center hover:bg-brand hover:text-black transition"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+                            <a href="https://www.instagram.com/fullproof_detailing/" class="w-12 h-12 bg-[#222] rounded flex items-center justify-center hover:bg-brand hover:text-black transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                            <a href="https://www.tiktok.com/discover/full-proof-detailing" class="w-12 h-12 bg-[#222] rounded flex items-center justify-center hover:bg-brand hover:text-black transition"><i class="fa-brands fa-tiktok text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-[400px] rounded-2xl overflow-hidden border border-gray-700 shadow-2xl" data-aos="fade-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451290.9634839846!2d-82.02980500473926!3d28.77709320141687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7bd2e03254559%3A0x6b04332219717647!2sLake%20County%2C%20FL!5e0!3m2!1sen!2sus!4v1716918239281!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="grayscale invert brightness-75 contrast-125"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 text-center text-sm text-gray-600">
+        <p>&copy; 2024 Full Proof Detailing. All Rights Reserved.</p>
+        <p class="mt-2">Designed for Alex</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // 1. DYNAMIC GALLERY ARRAY
+        // Replace these URLs with Alex's actual work photos later
+        const galleryImages = [
+            "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=500&h=500&fit=crop",
+            "https://images.unsplash.com/photo-1552930294-6b595f4c2974?w=500&h=500&fit=crop",
+            "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500&h=500&fit=crop",
+            "https://images.unsplash.com/photo-1542362567-b07e54358753?w=500&h=500&fit=crop",
+            "https://images.unsplash.com/photo-1563720223185-11003d516935?w=500&h=500&fit=crop",
+            "https://images.unsplash.com/photo-1503376763036-066120622c74?w=500&h=500&fit=crop",
+            "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=500&h=500&fit=crop",
+            "https://images.unsplash.com/photo-1580273916550-e323be2ebdd4?w=500&h=500&fit=crop"
+        ];
+
+        const galleryGrid = document.getElementById('gallery-grid');
+        
+        galleryImages.forEach((src, index) => {
+            const div = document.createElement('div');
+            // Adding AOS delay staggered for visual effect
+            div.className = "relative overflow-hidden group rounded-lg h-64 cursor-pointer";
+            div.setAttribute('data-aos', 'fade-up');
+            div.innerHTML = `
+                <img src="${src}" alt="Detailing Work ${index + 1}" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                    <span class="text-brand font-bold border border-brand px-4 py-2 rounded">VIEW WORK</span>
+                </div>
+            `;
+            galleryGrid.appendChild(div);
+        });
+
+        // 2. DYNAMIC REVIEWS ARRAY
+        const reviewsArray = [
+            {
+                name: "Sarah Jenkins",
+                stars: 5,
+                text: "Alex is a magician! My SUV had years of kid-mess and stains. He came to my office and made it look brand new. Highly recommend!"
+            },
+            {
+                name: "Mike T.",
+                stars: 5,
+                text: "Full Proof is the real deal. Professional, punctual, and the attention to detail on my motorcycle was unmatched. 10/10 service."
+            },
+            {
+                name: "David R.",
+                stars: 5,
+                text: "Best mobile detailer in Lake County. Convenience of him coming to the house is huge, and the wax job has my truck shining like glass."
+            }
+        ];
+
+        const reviewsContainer = document.getElementById('reviews-container');
+
+        reviewsArray.forEach(review => {
+            const starsHTML = '<i class="fa-solid fa-star text-brand"></i>'.repeat(review.stars);
+            const card = document.createElement('div');
+            card.className = "bg-[#222] p-8 rounded-xl border-l-4 border-brand shadow-lg relative";
+            card.innerHTML = `
+                <div class="absolute -top-4 -right-4 w-10 h-10 bg-brand rounded-full flex items-center justify-center text-black font-bold text-xl">"</div>
+                <div class="mb-4 text-sm">${starsHTML}</div>
+                <p class="text-gray-300 italic mb-6">"${review.text}"</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center font-bold text-brand">
+                        ${review.name.charAt(0)}
+                    </div>
+                    <span class="font-bold text-white">${review.name}</span>
+                </div>
+            `;
+            reviewsContainer.appendChild(card);
+        });
+
+    </script>
+</body>
+</html>
